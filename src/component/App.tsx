@@ -1,15 +1,16 @@
 
 import * as React from 'react';
-import stack from '../config/Stack'
+import  stack from '../lib/utils'
 
 import Stack from './Stack';
+
 
 export class App extends React.Component<{}, {}> {
     public render() {
        
         return (
             <div>                
-                <Stack {...stack} />
+                <Stack {...stack}/>
             </div>
         )
     }

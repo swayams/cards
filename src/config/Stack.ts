@@ -1,4 +1,6 @@
-const stack: any = [
+
+
+const stack= [
    {
         cards: [
             {
@@ -12,6 +14,21 @@ const stack: any = [
             },
         ],
         name: "Angular",
+       
+    },
+    {
+        cards: [
+            {
+                answer: "Answer3", 
+                question : "Question3"
+                
+            },
+            {
+                answer: "Answer4", 
+                question : "Question4"
+            },
+        ],
+        name: "React",
        
     }
 ]

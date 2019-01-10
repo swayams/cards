@@ -1,4 +1,7 @@
+
 import stack from '../config/Stack';
+import { IDeckProps } from './../component/Deck';
+
 
 function init() {
     if( !localStorage.stack ) {
@@ -7,10 +10,11 @@ function init() {
 }
 
 
-function getCards() {
+function getStack() : IDeckProps[] {
     init()
     return JSON.parse(localStorage.stack)
 }
 
+export default {stack: getStack()}
 
-export default getCards()
+

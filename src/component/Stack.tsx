@@ -17,18 +17,40 @@ class Stack extends React.Component<IStackProps, IStackState> {
         this.state = {current: this.props.stack[0]}
         
     }
+    
     public render() { 
         return ( 
           <div>  
            {
                 this.props.stack.map(
-                    (deck: IDeckProps, index: number) => (<a key={index}> {deck.name} </a>)               
+                    // tslint:disable-next-line:jsx-no-lambda
+                    (deck: IDeckProps, index: number) => ( <a onClick={() =>this.changeStack(index)} key={index}> {deck.name} </a>)               
                 )
             }
 
             <Deck {...this.state.current} />
             </div>
          );
+    }
+
+    private changeStack = (index: number) => {
+        
+       
+        
+        this.setState((prevState: IStackState) =>  {
+            
+            const currentIndex = this.props.stack.findIndex(value => value.name === prevState.current.name)
+
+            
+            if( currentIndex !== index) {
+                return {current: this.props.stack[index]}
+            } else {
+                return null
+            }
+        })
+
+
+        return undefined
     }
 }
  

@@ -16,6 +16,18 @@ class Deck extends React.Component<IDeckProps, IDeckState> {
         super(props);
         this.state = { current: this.props.cards[0]  };
     }
+
+    public shouldComponentUpdate(nextProps: IDeckProps, nextState: IDeckState): boolean {
+        if( nextProps.name !== this.props.name ) {
+            this.setState({current: nextProps.cards[0]})
+            return true;
+        } else if(nextState.current.question !== this.state.current.question) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
     public render() { 
         return (
             <div>
