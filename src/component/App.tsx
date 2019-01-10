@@ -1,29 +1,17 @@
-import Radium from 'radium';
+
 import * as React from 'react';
-import styles from '../styles/app.style';
+import stack from '../config/Stack'
 
+import Stack from './Stack';
 
-export interface ICardProps {
-    question: string
-    answer: string
-}
- 
-export interface ICardState {
-    flipToAnswer: boolean
-}
- 
-class Card extends React.Component<ICardProps, ICardState> {
-    constructor(props: ICardProps) {
-        super(props);
-        this.state = { flipToAnswer: false  };
+export class App extends React.Component<{}, {}> {
+    public render() {
+       
+        return (
+            <div>                
+                <Stack {...stack} />
+            </div>
+        )
     }
-    public render() { 
-        return ( 
-            <div style={styles.base}>
-                <a style={styles.content}>{this.props.question}</a>
-            </div> 
-        );
-    }
-}
- 
-export default Radium(Card);
+} 
+export default App;

@@ -1,4 +1,4 @@
-var common = {
+const common = {
     colors : {
         border: '#ccc',
         font: {
