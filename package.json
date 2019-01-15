@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-router-dom": "^4.3.1",
+    "immutable": "^4.0.0-rc.12",
     "radium": "^0.25.1",
     "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts-ts": "3.1.0"
   },
   "scripts": {
@@ -20,6 +24,10 @@
     "@types/radium": "^0.24.2",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
+    "react-redux": "^6.0.0",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools": "^3.5.0",
     "typescript": "^3.2.2"
   }
 }
