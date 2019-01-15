@@ -30,6 +30,22 @@ const stack= [
         ],
         name: "React",
        
+    },
+
+    {
+        cards: [
+            {
+                answer: "Answer5", 
+                question : "Question5"
+                
+            },
+            {
+                answer: "Answer6", 
+                question : "Question6"
+            },
+        ],
+        name: "Typescript",
+       
     }
 ]
 

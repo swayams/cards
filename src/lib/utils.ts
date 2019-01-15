@@ -1,6 +1,7 @@
 
 import stack from '../config/Stack';
-import { IDeckProps } from './../component/Deck';
+import { IDeckProps } from './../stack/Deck';
+
 
 
 function init() {
