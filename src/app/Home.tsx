@@ -8,7 +8,7 @@ import App from '../stack/App';
 const Home = () => (
     <Router>
         <div>
-            <ul>
+            <ul> 
                 <li><Link to="/"> Cards </Link></li>
                 <li><Link to="/create"> Create </Link></li>
                 <li><Link to="/wip"> WIP </Link></li>            
